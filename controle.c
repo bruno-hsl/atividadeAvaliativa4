@@ -55,7 +55,7 @@ void adicionarVeiculo(Veiculo** lista) {
     *lista = novoVeiculo;
 }
 
-void listarDieselAno2010OuPosterior(Veiculo* lista) {
+void Diesel2010(Veiculo* lista) {
     printf("\nProprietarios com carros a diesel do ano 2010 ou posterior:\n");
 
     while (lista != NULL) {
@@ -66,7 +66,7 @@ void listarDieselAno2010OuPosterior(Veiculo* lista) {
     }
 }
 
-void listarPlacasComLetraJ(Veiculo* lista) {
+void PlacasJ(Veiculo* lista) {
     printf("\nProprietarios:\n");
 
     while (lista != NULL) {
@@ -77,7 +77,7 @@ void listarPlacasComLetraJ(Veiculo* lista) {
     }
 }
 
-void listarModeloCorVogalSomaPar(Veiculo* lista) {
+void verificarVogalSoma(Veiculo* lista) {
     printf("\nModelo e cor dos veiculos com placas que possuem como segunda letra uma vogal e a soma dos valores numericos fornece um numero par:\n");
 
     while (lista != NULL) {
@@ -97,7 +97,7 @@ void listarModeloCorVogalSomaPar(Veiculo* lista) {
     }
 }
 
-void trocarProprietarioSemDigitoZero(Veiculo** lista) {
+void trocarProprietario(Veiculo** lista) {
     char chassiTroca[20];
     printf("\nDigite o chassi para troca de proprietario: ");
     scanf("%s", chassiTroca);
@@ -152,16 +152,16 @@ int main() {
                 adicionarVeiculo(&listaVeiculos);
                 break;
             case 2:
-                listarDieselAno2010OuPosterior(listaVeiculos);
+                Diesel2010(listaVeiculos);
                 break;
             case 3:
-                listarPlacasComLetraJ(listaVeiculos);
+                PlacasJ(listaVeiculos);
                 break;
             case 4:
-                listarModeloCorVogalSomaPar(listaVeiculos);
+                verificarVogalSoma(listaVeiculos);
                 break;
             case 5:
-                trocarProprietarioSemDigitoZero(&listaVeiculos);
+                trocarProprietario(&listaVeiculos);
                 break;
             case 0:
                 break;

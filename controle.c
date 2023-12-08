@@ -64,13 +64,13 @@ void Diesel2010(Veiculo* lista) {
         }
         lista = lista->prox;
     }
-}
+}   
 
 void PlacasJ(Veiculo* lista) {
     printf("\nProprietarios:\n");
 
     while (lista != NULL) {
-        if (lista->placa[0] == 'J' && (lista->placa[7] == '0' || lista->placa[7] == '2' || lista->placa[7] == '4' || lista->placa[7] == '7')) {
+        if (lista->placa[0] == 'J' && (lista->placa[6] == '0' || lista->placa[6] == '2' || lista->placa[6] == '4' || lista->placa[6] == '7')) {
             printf("Placa: %s, Proprietario: %s\n", lista->placa, lista->proprietario);
         }
         lista = lista->prox;

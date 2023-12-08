@@ -138,10 +138,10 @@ int main() {
 
     do {
         printf("\n1 - Adicionar Veiculo\n");
-        printf("2 - Listar Diesel Ano 2010 ou Posterior\n");
-        printf("3 - Listar Placas com Letra J\n");
-        printf("4 - Listar Modelo e Cor com Placas Especificas\n");
-        printf("5 - Trocar Proprietario sem Digito Zero na Placa\n");
+        printf("2 - Mostrar Diesel Ano 2010 ou Posterior\n");
+        printf("3 - Mostrar placas com Letra J\n");
+        printf("4 - Mostrar modelo e cor dos veiculos cujas placas possuem como segunda letra uma vogal e cuja soma dos valores numéricos fornece um número par \n");
+        printf("5 - Trocar Proprietario\n");
         printf("0 - Sair\n");
 
         printf("Escolha uma opcao: ");
